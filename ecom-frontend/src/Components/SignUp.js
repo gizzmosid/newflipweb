@@ -26,10 +26,10 @@ function SignUp() {
       <FormContainer>
         <h3>Sign-Up</h3>
         <InputContainer>
-          <p>FullName</p>
+          <p>Name</p>
           <input
             type="text"
-            placeholder="John Smith"
+            placeholder="Your Name Ex Rahul Singh"
             onChange={(e) => setFullName(e.target.value)}
             value={fullName}
           />
@@ -53,10 +53,10 @@ function SignUp() {
           />
         </InputContainer>
 
-        <SignUpButton onClick={signup}>Create Account in Amazon</SignUpButton>
+        <SignUpButton style={{color:'Black', fontWeight:'600'}}  onClick={signup}>Create Account in Electrobiz</SignUpButton>
       </FormContainer>
 
-      <LoginButton onClick={() => navigate("/login")}>
+      <LoginButton style={{color:'white', fontWeight:'600'}} onClick={() => navigate("/login")}>
         Back to Login
       </LoginButton>
     </Container>
@@ -129,21 +129,26 @@ const SignUpButton = styled.button`
   height: 35px;
   font-size: 12px;
   margin-top: 20px;
+  background-color: #12737H ;
+  border-radius:10px;
+  border:none;
 
   &:hover {
     background-color: #dfdfdf;
-    border: 1px solid gray;
+    
   }
 `;
 
 const LoginButton = styled.button`
-  width: 55%;
-  height: 35px;
-  background-color: #f3b414;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  margin-top: 30px;
+width: 40%;
+height: 45px;
+background-color: #12737F;
+border: 10px;
+outline: none;
+border-radius: 10px;
+margin-right :30px;
+margin-top: 30px;
+    cursor: pointer;
 `;
 
 export default SignUp;

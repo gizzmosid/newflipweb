@@ -106,7 +106,7 @@ function Address() {
             />
           </InputContainer>
 
-          <button onClick={deliver}>Deliver to this Address</button>
+          <button style={{color:'white', fontWeight:'600'}} onClick={deliver}>Deliver to this Address</button>
         </FormContainer>
       </Main>
     </Container>
@@ -143,13 +143,14 @@ const FormContainer = styled.form`
 
   button {
     align-self: flex-start;
-    height: 33px;
-    width: 250px;
-    margin-top: 20px;
-    background-color: #ffa32a;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+    width: 30%;
+height: 45px;
+background-color: #12737F;
+border: 10px;
+outline: none;
+border-radius: 10px;
+margin-right :30px;
+margin-top: 30px;
     cursor: pointer;
   }
 `;
