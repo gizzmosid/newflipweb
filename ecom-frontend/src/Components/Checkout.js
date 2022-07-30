@@ -36,10 +36,11 @@ function Checkout() {
 
                 <p>₹ {product.price}</p>
 
-                <button  style={{fontWeight:"600"}} onClick={(e) => removeFromBasket(e, product.id)}>
-                  Remove
-                </button>
+               
               </Description>
+              <Rbutton   style={{color:'white', fontWeight:'600',cursor:'pointer'}} onClick={(e) => removeFromBasket(e, product.id)}>
+                  Remove
+                </Rbutton>
             </Product>
           ))}
         </ShoppingCart>
@@ -60,7 +61,7 @@ function Checkout() {
             prefix={"₹ "}
           />
 
-          <button style={{background:" #b5d0d9",fontWeight:"600"}} onClick={() => navigate("/address")}>
+          <button style={{background:" #b5d0d9",fontWeight:"600",cursor:'pointer'}} onClick={() => navigate("/address")}>
             Proceed to Checkout
           </button>
         </Subtotal>
@@ -182,4 +183,13 @@ const Description = styled.div`
     }
   }
 `;
+const Rbutton=styled.button`
+width: 10%;
+height: 45px;
+background-color: #12737F;
+border: none;
+outline: none;
+border-radius: 10px;
+margin-right :30px;
+margin-top: 30px;`
 export default Checkout;

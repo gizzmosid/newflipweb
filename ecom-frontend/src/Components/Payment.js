@@ -135,7 +135,7 @@ function Payment() {
             prefix={"₹ "}
           />
 
-          <button onClick={confirmPayment}>Place Order</button>
+          <Pbutton  style={{ background:" #b5d0d9",fontWeight:"600",cursor:'pointer'}} onClick={confirmPayment}>Place Order</Pbutton>
         </Subtotal>
       </Main>
     </Container>
@@ -264,8 +264,8 @@ const Subtotal = styled.div`
   }
 
   button {
-    width: 65%;
-    height: 33px;
+    width: 45%;
+    height: 63px;
     margin-top: 20px;
     background-color: #ffd814;
     border: none;
@@ -274,4 +274,16 @@ const Subtotal = styled.div`
     border-radius: 8px;
   }
 `;
+
+const Pbutton=styled.button`
+width: 65%;
+    font-size:16px;
+    height: 53px;
+    margin-top: 20px;
+    background-color: #ffd814;
+    border: none;
+    outline: none;
+    cursor:pointer;
+
+    border-radius: 8px;`
 export default Payment;
