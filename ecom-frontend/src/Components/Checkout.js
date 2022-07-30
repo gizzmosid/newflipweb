@@ -50,10 +50,7 @@ function Checkout() {
                 <p>
                   Subtotal ( {basket.length} items ) : <strong> {value}</strong>
                 </p>
-                <small>
-                  <input type="checkbox" />
-                  <span>This order contains a gift.</span>
-                </small>
+               
               </>
             )}
             decimalScale={2}
